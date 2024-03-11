@@ -1,0 +1,270 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 10px 30px;
+  background-color: white;
+}
+
+@media (min-width:768px) {
+  .header {
+    padding: 22px 30px 10px 30px;
+  }
+}
+
+@media (max-width:1000px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.header__logo {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: "Poppins";
+  padding: 10px 10px 10px 0;
+}
+
+@media (min-width:768px) {
+  .header__logo {
+    font-size: 17px;
+    line-height: 17px;
+    word-break: break-all;
+  }
+}
+
+.header__logo:active {
+  color: white;
+}
+
+.header__logo-title {
+  color:#9B9A78;
+} 
+
+.header__logo-title:active {
+  color: white;
+}
+
+body.navigation-open .header__list {
+  left: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+body.navigation-open .header__item {
+width: 100%
+}
+
+body.navigation-open .header__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  }
+
+@media (min-width:1280px) {
+  .header__nav {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  position: fixed;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  padding: 87px 0 0 0;
+  justify-content: start;
+  align-items: center;
+  background-color: #9B9A78;;
+}
+
+@media (min-width:1000px) {
+  .header__list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    gap: 9px;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    position: static;
+    z-index: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.header__link {
+  position: relative;
+  font-family: "Poppins";
+  color: #313131;
+  padding: 10px;
+}
+
+
+
+body.navigation-open .header__link:hover {
+  color: white;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;  
+  gap: 20px;
+}
+
+@media (min-width:768px) {
+  .header__container {
+    gap: 28px;
+  }
+}
+
+@media (min-width:1024px) {
+  .header__container {
+    gap: 13px;
+  }
+}
+
+.header__button-search {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .header__button-search {
+    display: flex;
+  }
+}
+
+.header__button-search path {
+  fill: #313131;
+  transition: all .2s ease-out;
+}
+
+.header__button-search:hover path{
+  fill:#9B9A78;
+}
+
+.header__button-search:active path{
+  fill: #313131;
+}
+
+.header__button-secondary {
+  padding: 8px;
+  font-family: "Poppins"; 
+  color: #9B9A78;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+@media (min-width:768px) {
+  .header__button-secondary {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 17px;
+    display: inline-block
+  }
+}
+
+.header__button-secondary__title {
+  position: relative;
+  padding: 0px;
+}
+
+.header__button-secondary__title:hover::after {
+  width: 100%;
+}
+
+.header__button-secondary__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  height: 2px;
+  width: 0;
+  display: flex;
+  background-color: #9B9A78;
+  transition: width 0.3s ease-out;
+}
+
+.header__button-secondary__title:active {
+  color: white;
+}
+
+
+.header__button-burger {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+  z-index: 50;
+}
+
+body.navigation-open .header__figure.first{
+  transform: translate(-50%,-50%) rotate(-45deg);
+} 
+
+body.navigation-open .header__figure.second {
+  opacity: 0;
+} 
+
+body.navigation-open .header__figure.third {
+  transform: translate(-50%,-50%) rotate(45deg);
+} 
+
+@media (min-width:1000px) {
+.header__button-burger {
+ display: none;
+}
+}
+
+.header__figure {
+position: absolute;
+background-color: black;
+height: 2px;
+width: 100%;
+top: 50%;
+left: 50%;
+transition: transform .2s ease-out, opacity .2s ease-out;
+}
+
+.header__figure.first {
+  transform: translate(-50%,calc(-50% - 10px));
+}
+
+.header__figure.second {
+  transform: translate(-50%,-50%);
+}
+
+.header__figure.third {
+transform: translate(-50%,calc(-50% + 10px));
+}
+ 

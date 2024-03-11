@@ -1,0 +1,37 @@
+.slider {
+    background-color: transparent;
+    width: 100%;
+  } 
+  
+  @media (min-width:768px) {
+    .slider {
+      padding: 0px;
+    }
+  }
+
+  .slider__box {
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .slider__img {
+    width: 100%;
+  } 
+
+  @media (min-width:1000px) {
+  .slider__img {
+    width: 60%;
+  }
+}
+
+@media (min-width:1280px) {
+  .slider__img {
+    width: 66%;
+  }
+}
+
+@media (min-width:1315px) {
+  .slider__img {
+    width: 63%;
+  }
+}

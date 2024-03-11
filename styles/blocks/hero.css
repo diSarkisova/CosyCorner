@@ -1,0 +1,134 @@
+.hero {
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 2000px;
+  }
+  
+  @media (min-width:1280px) {
+    .hero {
+      flex-direction: row;
+      max-width: 1440px;
+    }
+  }
+
+  .hero__wrapper {
+    width: 100%;
+    order: -1;
+  }
+  
+  @media (min-width:1000px) {
+    .hero__wrapper {
+      width: fit-content;
+      position: absolute;
+      top: 12px;
+      right: 0;
+    }
+  }
+
+  @media (min-width:1280px) {
+    .hero__wrapper {
+      top: 30px;
+      right: 0px;
+    }
+  }
+  
+  .hero__container {
+    width: 100%;
+    background-color: rgb(221 221 221 / 89%);
+    backdrop-filter: blur(5px);
+    display: grid;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 16px;
+  } 
+  
+  @media (min-width:1000px) {
+    .hero__container {
+      height: 310px;
+    }
+  } 
+
+  @media (min-width:1280px) {
+    .hero__container {
+      width: 816px;
+      height: 419px;
+      padding: 26px 20px 0 46px;
+      background-color: rgb(221 221 221 / 77%);
+    }
+  } 
+  
+  .hero__title {
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 700;
+  } 
+  
+  @media (min-width:1000px) {
+    .hero__title  {
+      font-size: 40px;
+    } 
+  }
+
+  @media (min-width:1280px) {
+    .hero__title  {
+      font-size: 56px;
+    } 
+  }
+  
+  .hero__title__line {
+    display: flex;
+    background-color: #9B9A78;
+    height: 4px;
+    width: 42px;
+    top: 32px;
+    left: 284px;
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  @media (max-width:400px) {
+    .hero__title__line  {
+    height: 3px;
+    width: 14px;
+    top: 35px;
+    left: 277px;
+    }
+  }
+
+  @media (min-width:1000px) {
+    .hero__title__line  {
+      height: 4px;
+      width: 72px;
+      top: 13%;
+      left: 60%;
+    }
+  } 
+
+  @media (min-width:1280px) {
+    .hero__title__line  {
+      left: 64%;
+    }
+  } 
+
+  .hero__description {
+    font-size: 17px;
+    color: #909090;
+    font-weight: 400;
+  }
+  
+  @media (min-width:1000px) {
+    .hero__description { 
+      font-size: 19px;
+      height: 80px;
+    }
+  } 
+
+  @media (min-width:1280px) {
+    .hero__description { 
+      font-size: 24px;
+      width: 760px;
+    }
+  } 

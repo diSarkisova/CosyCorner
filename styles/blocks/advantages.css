@@ -1,0 +1,102 @@
+.advantages {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 27px 25px 27px 25px;
+    max-width: 960px;    
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  @media (min-width:674px) {
+    .advantages {
+      padding: 22px 25px 0px 25px;
+      flex-direction: row;
+      max-width: 1440px;
+    }
+  }
+
+  @media (min-width:1000px) {
+    .advantages {
+      padding: 112px 47px 0px 47px;
+    }
+  }
+
+  @media (min-width:1300px) {
+    .advantages {
+      padding: 60px 47px 0px 47px;
+    }
+  }
+
+  .advantages-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (max-width:1000px) {
+  .location__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.rooms__img{
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width:1000px) {
+  .rooms__img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.connection__img{
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width:1000px) {
+  .connection__img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.primary-title{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #313131;
+  background-color: transparent;
+  padding: 10px 12px 5px;
+}
+
+@media (max-width: 1000px) {
+.primary-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.primary-description{
+font-family: Poppins;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: #909090;
+background-color: transparent;
+}
+
+
+@media (max-width: 1000px) {
+.primary-description {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+.primary-button {
+    font-family: "Poppins"; 
+    color: white;
+    background-color: #9B9A78;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 10px 15px;
+    border: 1px solid #9B9A78;
+    transition: color .2s ease-out, background-color .2s ease-out;
+  }
+  
+  .primary-button:hover {
+    color: #9B9A78;
+    background-color: transparent;
+  }
+
+  .primary-button:active {
+    background-color: #9B9A78;
+    color: white;
+  }
+  
+  @media (min-width:768px) {
+    .primary-button  {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 16px 40px;
+    }
+  }
