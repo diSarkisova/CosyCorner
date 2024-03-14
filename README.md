@@ -1,1 +1,1 @@
-# landing-page-Vue
+# landing-page
