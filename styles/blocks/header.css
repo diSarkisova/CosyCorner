@@ -124,7 +124,45 @@ body.navigation-open .header__link {
 
 body.navigation-open .header__link:hover {
   color: white;
+  transition: color .2s ease-out;
 }
+
+body.navigation-open .header__link:active {
+  color: #313131;
+}
+
+@media (min-width:1000px) {
+  .header__underline {
+    position: relative;
+  }
+  
+  .header__underline:hover {
+    color: #9B9A78;
+  }
+  
+  .header__underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -17px;
+    height: 2px;
+    background-color: #9B9A78;
+    display: flex;
+    transition: width .3s ease-out;
+  }
+  
+  .header__underline:hover::after {
+    width: 100%;
+  }
+  
+  .header__underline:active {
+    color: #313131;
+    background-color: transparent;
+  }
+}
+
+
 
 .header__container {
   display: flex;
@@ -210,7 +248,7 @@ body.navigation-open .header__link:hover {
   width: 0;
   display: flex;
   background-color: #9B9A78;
-  transition: width 0.3s ease-out;
+  transition: width .2s ease-out;
 }
 
 .header__button-secondary__title:active {

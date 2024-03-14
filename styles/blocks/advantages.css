@@ -24,9 +24,15 @@
     }
   }
 
-  @media (min-width:1300px) {
+  @media (min-width:1280px) {
     .advantages {
-      padding: 60px 47px 0px 47px;
+      padding: 87px 47px 0px 47px;
+    }
+  }
+
+  @media (min-width:1350px) {
+    .advantages {
+      padding: 70px 47px 0px 47px;
     }
   }
 
