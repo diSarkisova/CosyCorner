@@ -1,5 +1,5 @@
-# Cosy Corner- Landing Page
-This is a single-page landing page for the cosy corner co-working space, crafted to showcase the unique features, benefits, and community of this vibrant workspace.
+# Cosy Corner
+This is a single landing page for the cosy corner co-working space, crafted to showcase the unique features, benefits, and community of this vibrant workspace.
 # Stack
 HTML\
 CSS\
