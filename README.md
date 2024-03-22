@@ -12,6 +12,6 @@ The “accets” folder is used to store fonts, icons, and images.
 The “styles” folder is used to store CSS files.
 The “block” folder is for storing CSS files for each block separately.
 # Installation
-1. git clone [https://github.com/madzadev/landing-page.git](https://github.com/diSarkisova/CosyCorner.git)https://github.com/diSarkisova/CosyCorner.git
+1. git clone https://github.com/diSarkisova/CosyCorner.git
 2. Open index.html. That's it!
 
