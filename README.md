@@ -12,6 +12,6 @@ The “fonts” folder is used to store project fonts.\
 The “styles” folder is used to store CSS files.\
 The “block” folder is for storing CSS files for each block separately.
 # Installation
-1. <git clone https://github.com/diSarkisova/CosyCorner.git\>
+1. git clone <https://github.com/diSarkisova/CosyCorner.git\>
 2. Open index.html. That's it!
 
