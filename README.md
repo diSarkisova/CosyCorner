@@ -7,7 +7,7 @@ JavaScript
 # Projest practices
 The “accets” folder is used to store fonts, icons, and images.\
 The “fonts” folder is used to store project fonts.\
-  The “icons” folder is used to store SVG files.\
+  >The “icons” folder is used to store SVG files.\
   The “images” folder is used to store PNG images.\
 The “styles” folder is used to store CSS files.\
 The “block” folder is for storing CSS files for each block separately.
